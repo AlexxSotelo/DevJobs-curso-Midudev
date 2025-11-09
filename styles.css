@@ -284,6 +284,32 @@ article {
     }
 }
 
+/*search filters*/
+.search-bar{
+    margin-top: 1rem;
+}
+
+.search-filters {
+    background: none;
+    box-shadow: none;
+
+    select {
+        background-color: var(--input-bg);
+        color: var(--text-primary);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-family: inherit;
+        cursor: pointer;
+
+        option {
+            background-color: var(--input-bg);
+            color: var(--text-primary)
+        }
+    }
+}
+
 /*Job Listings Page*/
 .job-title {
     margin-left: 4rem;
@@ -370,3 +396,11 @@ footer {
     }
 }
 
+.button-apply-job {
+    background: #09f;
+    
+    &.is-applied {
+        background: #4caf50;
+        pointer-events: none;
+    }
+}
