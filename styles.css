@@ -259,7 +259,7 @@ main > section:nth-child(2) footer {
 }
 
 /*Feature Cards*/
-article {
+.feature-card {
     background-color: var(--card-bg);
     padding: 2rem;
     margin-bottom: 16px;
@@ -320,6 +320,9 @@ article {
     border-radius: 1rem;
 
     article {
+        padding: 2rem;
+        margin-bottom: 16px;
+        border-radius: 0.5rem;
         background: none;
         box-shadow: none;
         border-radius: 0;
@@ -402,5 +405,56 @@ footer {
     &.is-applied {
         background: #4caf50;
         pointer-events: none;
+    }
+}
+
+/*pagina de la oferta*/
+.breadcrumb {
+    padding-left: 15rem;
+    padding-top: 2rem;
+    padding-bottom: none;
+    margin-bottom: none;
+}
+
+.job-offer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: var(--card-bg);
+
+    .job-card {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        margin-bottom: 16px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 1px 10px 0 var(--shadow);
+    }
+
+    .job-header {
+        display: flex;
+        align-items: start;
+        gap: 8rem;
+    }
+
+    .job-requirements li {
+        margin-left: 1.5rem;
+    }
+
+    .job-description {
+        margin: 2rem 0;
+        line-height: 1.8;
+
+        &:last-child {
+            margin-bottom: 1px solid var(--border);
+        }
+    }
+    .apply-section {
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            margin: 1.5rem;;
+        }
     }
 }

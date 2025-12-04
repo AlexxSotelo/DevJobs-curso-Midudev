@@ -35,7 +35,7 @@
             <h1>Encuentra tu próximo trabajo</h1>
             <p>Explora miles de oportunidades en el sector tecnológico</p>
 
-            <form role="search">
+            <form role="search" id="empleos-search-form">
                 <div class="search-bar">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -45,7 +45,7 @@
                         <path d="M21 21l-6 -6" />
                     </svg>
 
-                    <input required type="text" placeholder="Buscar trabajos, empresas o habilidades"/>
+                    <input required type="text" placeholder="Buscar trabajos, empresas o habilidades" id="empleos-search-input"/>
                 </div>
 
                 <div class="search-filters">
@@ -74,6 +74,8 @@
                     </select>
                 </div>
             </form>
+
+            <span id="filter-selected-value"></span>
         </section>
 
         <section>
